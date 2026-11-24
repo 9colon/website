@@ -1,0 +1,5 @@
+User-Agent: *
+Disallow: /
+
+Host: http://localhost:3010
+Sitemap: http://localhost:3010/sitemap.xml
