@@ -1,5 +1,5 @@
 User-Agent: *
 Disallow: /
 
-Host: http://localhost:3010
-Sitemap: http://localhost:3010/sitemap.xml
+Host: https://www.9colon.com
+Sitemap: https://www.9colon.com/sitemap.xml
