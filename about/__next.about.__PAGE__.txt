@@ -1,6 +1,6 @@
 1:"$Sreact.fragment"
-2:I[1251,["264","static/chunks/264-8dfa34814482c94b.js","129","static/chunks/129-8f39230297f2a026.js","220","static/chunks/app/about/page-81a98d6b803cd189.js"],"EditablePage"]
-3:T8d5,
+2:I[111,["264","static/chunks/264-8dfa34814482c94b.js","602","static/chunks/602-63cebbc95a86d2d3.js","129","static/chunks/129-654e7a2ed247c0e9.js","220","static/chunks/app/about/page-301a38734f7509f2.js"],"EditablePage"]
+3:T968,
     query page($relativePath: String!) {
   page(relativePath: $relativePath) {
     ... on Document {
@@ -30,6 +30,10 @@
       title
       body
       image
+      imageDark
+      imageAlt
+      imageCaption
+      imageCredit
       visual
       alignment
       actions {
@@ -52,6 +56,7 @@
       eyebrow
       title
       intro
+      anchor
       layout
       items {
         __typename
@@ -86,7 +91,10 @@
       title
       richBody
       image
+      imageDark
       imageAlt
+      imageCaption
+      imageCredit
     }
     ... on PageBlocksProcess {
       eyebrow
@@ -96,6 +104,7 @@
         __typename
         title
         description
+        icon
       }
     }
     ... on PageBlocksLatestPosts {
@@ -150,7 +159,7 @@
     6:X
 b:X
 b:C
-0:{"buildId":"NspV_DOzsuLuCJLDBuMbC","data":[{"rsc":["$","$1","c",{"children":[["$","$L2",null,{"data":{"page":{"_sys":{"filename":"about","basename":"about.mdx","hasReferences":false,"breadcrumbs":["about"],"path":"content/pages/about.mdx","relativePath":"about.mdx","extension":".mdx"},"id":"content/pages/about.mdx","__typename":"Page","title":"About 9Colon Systems LLP","description":"Learn about 9Colon’s Magento and Adobe Commerce engineering specialization, additional commerce capabilities, and independent SaaS products.","blocks":[{"__typename":"PageBlocksHero","eyebrow":"About 9Colon","title":"Commerce engineering at the core. Independent products by design.","body":"9Colon Systems LLP specializes in Magento and Adobe Commerce engineering, with additional Shopify and BigCommerce services and an independent SaaS product portfolio. We help organizations solve demanding engineering problems without unnecessary complexity.","image":null,"visual":null,"alignment":"left","actions":null,"techStrip":null},{"__typename":"PageBlocksFeatures","eyebrow":"Our mission","title":"Make sophisticated technology understandable, accountable, and useful.","intro":"We build with a small set of principles that guide product choices and client work.","layout":null,"items":[{"__typename":"PageBlocksFeaturesItems","title":"Clarity before complexity","description":"We define ownership, outcomes, and constraints before selecting technology.","linkLabel":null,"href":null,"badge":null,"status":null,"featured":null,"icon":null,"image":null,"imageAlt":null},{"__typename":"PageBlocksFeaturesItems","title":"Independent by design","description":"Products keep clear boundaries while sharing a coherent customer experience.","linkLabel":null,"href":null,"badge":null,"status":null,"featured":null,"icon":null,"image":null,"imageAlt":null},{"__typename":"PageBlocksFeaturesItems","title":"Operations are part of the product","description":"Security, observability, accessibility, and recovery are designed in from the start.","linkLabel":null,"href":null,"badge":null,"status":null,"featured":null,"icon":null,"image":null,"imageAlt":null}]},{"__typename":"PageBlocksFeatures","eyebrow":"The team","title":"A senior, multidisciplinary delivery model.","intro":"Our team structure brings product strategy, design, application engineering, data integration, and operations into one accountable workflow. Named profiles will be published as the corporate directory is approved.","layout":null,"items":[{"__typename":"PageBlocksFeaturesItems","title":"Product and design","description":"Turns business goals into clear journeys, content, and interaction systems.","linkLabel":null,"href":null,"badge":null,"status":null,"featured":null,"icon":null,"image":null,"imageAlt":null},{"__typename":"PageBlocksFeaturesItems","title":"Engineering","description":"Builds maintainable applications, APIs, and integration foundations.","linkLabel":null,"href":null,"badge":null,"status":null,"featured":null,"icon":null,"image":null,"imageAlt":null},{"__typename":"PageBlocksFeaturesItems","title":"Platform and operations","description":"Establishes secure delivery, telemetry, resilience, and support practices.","linkLabel":null,"href":null,"badge":null,"status":null,"featured":null,"icon":null,"image":null,"imageAlt":null}]},{"__typename":"PageBlocksCta","eyebrow":null,"title":"Build with a partner that values durable decisions.","body":"Explore our service capabilities or start a focused conversation.","label":"View services","href":"/services","secondaryLabel":null,"secondaryHref":null}]}},"errors":null,"query":"$3","variables":{"relativePath":"about.mdx"}}],null,"$L4"]}],"isPartial":"$@5","staleTime":"$6","varyParams":null},{"rsc":"$L7","isPartial":"$@8","staleTime":"$6","varyParams":null},{"rsc":"$L9","isPartial":"$@a","staleTime":"$6","varyParams":"$b"}],"isUpgradeableISRFallback":false,"a":"$@c","rootVaryParams":null,"needsRuntimeRequest":"$@d"}
+0:{"buildId":"0jPLcGQLDMn6bMSlpM2vM","data":[{"rsc":["$","$1","c",{"children":[["$","$L2",null,{"data":{"page":{"_sys":{"filename":"about","basename":"about.mdx","hasReferences":false,"breadcrumbs":["about"],"path":"content/pages/about.mdx","relativePath":"about.mdx","extension":".mdx"},"id":"content/pages/about.mdx","__typename":"Page","title":"About 9Colon Systems LLP","description":"Learn about 9Colon’s Magento and Adobe Commerce engineering specialization, additional commerce capabilities, and independent SaaS products.","blocks":[{"__typename":"PageBlocksHero","eyebrow":"About 9Colon","title":"Commerce engineering at the core. Independent products by design.","body":"9Colon Systems LLP specializes in Magento and Adobe Commerce engineering, with additional Shopify and BigCommerce services and an independent SaaS product portfolio. We help organizations solve demanding engineering problems without unnecessary complexity.","image":null,"imageDark":null,"imageAlt":null,"imageCaption":null,"imageCredit":null,"visual":null,"alignment":"left","actions":null,"techStrip":null},{"__typename":"PageBlocksFeatures","eyebrow":"Our mission","title":"Make sophisticated technology understandable, accountable, and useful.","intro":"We build with a small set of principles that guide product choices and client work.","anchor":null,"layout":null,"items":[{"__typename":"PageBlocksFeaturesItems","title":"Clarity before complexity","description":"We define ownership, outcomes, and constraints before selecting technology.","linkLabel":null,"href":null,"badge":null,"status":null,"featured":null,"icon":null,"image":null,"imageAlt":null},{"__typename":"PageBlocksFeaturesItems","title":"Independent by design","description":"Products keep clear boundaries while sharing a coherent customer experience.","linkLabel":null,"href":null,"badge":null,"status":null,"featured":null,"icon":null,"image":null,"imageAlt":null},{"__typename":"PageBlocksFeaturesItems","title":"Operations are part of the product","description":"Security, observability, accessibility, and recovery are designed in from the start.","linkLabel":null,"href":null,"badge":null,"status":null,"featured":null,"icon":null,"image":null,"imageAlt":null}]},{"__typename":"PageBlocksFeatures","eyebrow":"The team","title":"A senior, multidisciplinary delivery model.","intro":"Our team structure brings product strategy, design, application engineering, data integration, and operations into one accountable workflow. Named profiles will be published as the corporate directory is approved.","anchor":null,"layout":null,"items":[{"__typename":"PageBlocksFeaturesItems","title":"Product and design","description":"Turns business goals into clear journeys, content, and interaction systems.","linkLabel":null,"href":null,"badge":null,"status":null,"featured":null,"icon":null,"image":null,"imageAlt":null},{"__typename":"PageBlocksFeaturesItems","title":"Engineering","description":"Builds maintainable applications, APIs, and integration foundations.","linkLabel":null,"href":null,"badge":null,"status":null,"featured":null,"icon":null,"image":null,"imageAlt":null},{"__typename":"PageBlocksFeaturesItems","title":"Platform and operations","description":"Establishes secure delivery, telemetry, resilience, and support practices.","linkLabel":null,"href":null,"badge":null,"status":null,"featured":null,"icon":null,"image":null,"imageAlt":null}]},{"__typename":"PageBlocksCta","eyebrow":null,"title":"Build with a partner that values durable decisions.","body":"Explore our service capabilities or start a focused conversation.","label":"View services","href":"/services","secondaryLabel":null,"secondaryHref":null}]}},"errors":null,"query":"$3","variables":{"relativePath":"about.mdx"}}],null,"$L4"]}],"isPartial":"$@5","staleTime":"$6","varyParams":null},{"rsc":"$L7","isPartial":"$@8","staleTime":"$6","varyParams":null},{"rsc":"$L9","isPartial":"$@a","staleTime":"$6","varyParams":"$b"}],"isUpgradeableISRFallback":false,"a":"$@c","rootVaryParams":null,"needsRuntimeRequest":"$@d"}
 e:I[4761,[],"OutletBoundary"]
 f:"$Sreact.suspense"
 11:I[4761,[],"ViewportBoundary"]
