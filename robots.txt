@@ -1,5 +1,5 @@
 User-Agent: *
-Allow: /
+Disallow: /
 
 Host: https://www.9colon.com
 Sitemap: https://www.9colon.com/sitemap.xml
