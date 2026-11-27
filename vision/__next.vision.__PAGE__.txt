@@ -1,0 +1,215 @@
+1:"$Sreact.fragment"
+2:I[1315,["264","static/chunks/264-8dfa34814482c94b.js","275","static/chunks/275-58eb57ba0a40d487.js","850","static/chunks/850-4d2ae3b282d0463c.js","351","static/chunks/app/vision/page-3523b707677e18dd.js"],"EditablePage"]
+3:Tb74,
+    query page($relativePath: String!) {
+  page(relativePath: $relativePath) {
+    ... on Document {
+      _sys {
+        filename
+        basename
+        hasReferences
+        breadcrumbs
+        path
+        relativePath
+        extension
+      }
+      id
+    }
+    ...PageParts
+  }
+}
+    
+    fragment PageParts on Page {
+  __typename
+  title
+  description
+  published
+  hidden
+  blocks {
+    __typename
+    ... on PageBlocksHero {
+      visibility
+      eyebrow
+      title
+      body
+      image
+      imageDark
+      imageAlt
+      imageCaption
+      imageCredit
+      visual
+      titleSize
+      alignment
+      actions {
+        __typename
+        label
+        href
+        style
+      }
+      techStrip
+    }
+    ... on PageBlocksLogos {
+      visibility
+      title
+      items {
+        __typename
+        name
+        image
+      }
+    }
+    ... on PageBlocksFeatures {
+      visibility
+      eyebrow
+      title
+      intro
+      anchor
+      layout
+      aside {
+        __typename
+        title
+        body
+        label
+        href
+        icon
+      }
+      items {
+        __typename
+        title
+        description
+        linkLabel
+        href
+        badge
+        status
+        featured
+        icon
+        image
+        imageAlt
+      }
+    }
+    ... on PageBlocksProductShowcase {
+      visibility
+      eyebrow
+      title
+      description
+      status
+      visual
+      features
+      productImage
+      productImageAlt
+      primaryLabel
+      primaryHref
+      secondaryLabel
+      secondaryHref
+    }
+    ... on PageBlocksContent {
+      visibility
+      eyebrow
+      title
+      richBody
+      image
+      imageDark
+      imageAlt
+      imageCaption
+      imageCredit
+    }
+    ... on PageBlocksProcess {
+      visibility
+      eyebrow
+      title
+      intro
+      steps {
+        __typename
+        title
+        description
+        icon
+      }
+    }
+    ... on PageBlocksLatestPosts {
+      visibility
+      eyebrow
+      title
+      intro
+      linkLabel
+    }
+    ... on PageBlocksCta {
+      visibility
+      eyebrow
+      title
+      body
+      label
+      href
+      secondaryLabel
+      secondaryHref
+    }
+    ... on PageBlocksFaq {
+      visibility
+      eyebrow
+      title
+      intro
+      items {
+        __typename
+        question
+        answer
+      }
+    }
+    ... on PageBlocksServiceCatalog {
+      visibility
+      eyebrow
+      title
+      intro
+      primaryTitle
+      primaryIntro
+      specializedTitle
+      specializedIntro
+      platformTitle
+      platformIntro
+    }
+    ... on PageBlocksArchitecture {
+      visibility
+      eyebrow
+      title
+      intro
+      items {
+        __typename
+        title
+        description
+        icon
+      }
+    }
+    ... on PageBlocksCredentials {
+      visibility
+      eyebrow
+      title
+      intro
+      items {
+        __typename
+        title
+        detail
+        meta
+        icon
+      }
+    }
+  }
+}
+    6:X
+b:X
+b:C
+0:{"buildId":"nYHDaT78TJ6oS7WV1CF91","data":[{"rsc":["$","$1","c",{"children":[["$","$L2",null,{"data":{"page":{"_sys":{"filename":"vision","basename":"vision.mdx","hasReferences":false,"breadcrumbs":["vision"],"path":"content/pages/vision.mdx","relativePath":"vision.mdx","extension":".mdx"},"id":"content/pages/vision.mdx","__typename":"Page","title":"Our vision | 9Colon Systems LLP","description":"The direction behind 9Colon Systems LLP: commerce engineering depth, independent products and technology that stays accountable.","published":true,"hidden":true,"blocks":[{"__typename":"PageBlocksHero","visibility":null,"eyebrow":"Our vision","title":"Technology that stays understandable as it grows.","body":"A connected set of products and services, built so that ownership, behaviour and cost remain clear to the people who depend on them.","image":null,"imageDark":null,"imageAlt":null,"imageCaption":null,"imageCredit":null,"visual":null,"titleSize":"compact","alignment":"left","actions":null,"techStrip":null},{"__typename":"PageBlocksContent","visibility":null,"eyebrow":"Direction","title":"Where the work is heading.","richBody":{"type":"root","children":[{"type":"h3","children":[{"type":"text","text":"Depth before breadth"}]},{"type":"p","children":[{"type":"text","text":"Commerce engineering is the centre of gravity. Magento and Adobe Commerce work funds and informs everything else, and every additional platform is supported because a client runs it, not because a list needed another logo."}]},{"type":"h3","children":[{"type":"text","text":"Products with clear boundaries"}]},{"type":"p","children":[{"type":"text","text":"Each product owns its business data and its own rules, and shares identity and tenant context rather than duplicating them. That boundary is what lets a product be adopted, replaced or retired without dragging the rest of the ecosystem with it."}]},{"type":"h3","children":[{"type":"text","text":"Operations designed in"}]},{"type":"p","children":[{"type":"text","text":"Security, observability, accessibility and recovery are part of the product from the first decision, not a hardening phase before launch. A system that cannot be operated is not finished."}]},{"type":"h3","children":[{"type":"text","text":"Judgement kept visible"}]},{"type":"p","children":[{"type":"text","text":"Automation, including applied AI, is used where it improves a defined decision. Human review, evaluation criteria and fallback behaviour stay explicit product decisions rather than hidden implementation details."}]}]},"image":null,"imageDark":null,"imageAlt":null,"imageCaption":null,"imageCredit":null},{"__typename":"PageBlocksFeatures","visibility":null,"eyebrow":"Principles","title":"What the vision asks of each decision.","intro":null,"anchor":null,"layout":"grid","aside":null,"items":[{"__typename":"PageBlocksFeaturesItems","title":"One identity, one tenant","description":"Accounts remains the single source of identity and tenant context across every product.","linkLabel":null,"href":null,"badge":null,"status":null,"featured":null,"icon":"shield","image":null,"imageAlt":null},{"__typename":"PageBlocksFeaturesItems","title":"Explicit ownership","description":"Every system, dataset and decision has a named owner before implementation begins.","linkLabel":null,"href":null,"badge":null,"status":null,"featured":null,"icon":"compass","image":null,"imageAlt":null},{"__typename":"PageBlocksFeaturesItems","title":"Observable by default","description":"Correlation context travels with every operation so behaviour can be explained after the fact.","linkLabel":null,"href":null,"badge":null,"status":null,"featured":null,"icon":"chart","image":null,"imageAlt":null},{"__typename":"PageBlocksFeaturesItems","title":"Durable over fashionable","description":"Choose the approach that can still be maintained and understood years after launch.","linkLabel":null,"href":null,"badge":null,"status":null,"featured":null,"icon":"architecture","image":null,"imageAlt":null}]},{"__typename":"PageBlocksCta","visibility":null,"eyebrow":null,"title":"Build with a partner that values durable decisions.","body":"Explore the services behind the vision or start a focused conversation.","label":"View services","href":"/services","secondaryLabel":null,"secondaryHref":null}]}},"errors":null,"query":"$3","variables":{"relativePath":"vision.mdx"}}],null,"$L4"]}],"isPartial":"$@5","staleTime":"$6","varyParams":null},{"rsc":"$L7","isPartial":"$@8","staleTime":"$6","varyParams":null},{"rsc":"$L9","isPartial":"$@a","staleTime":"$6","varyParams":"$b"}],"isUpgradeableISRFallback":false,"a":"$@c","rootVaryParams":null,"needsRuntimeRequest":"$@d"}
+e:I[4761,[],"OutletBoundary"]
+f:"$Sreact.suspense"
+11:I[4761,[],"ViewportBoundary"]
+12:I[4761,[],"MetadataBoundary"]
+13:I[9292,[],"IconMark"]
+14:I[908,[],""]
+15:I[5562,[],""]
+4:["$","$Le",null,{"children":["$","$f",null,{"name":"Next.MetadataOutlet","children":"$@10"}]}]
+7:["$","$1","h",{"children":[null,["$","$L11",null,{"children":[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]}],["$","div",null,{"hidden":true,"children":["$","$L12",null,{"children":["$","$f",null,{"name":"Next.Metadata","children":[["$","title","0",{"children":"Our vision | 9Colon Systems LLP | 9Colon"}],["$","meta","1",{"name":"description","content":"The direction behind 9Colon Systems LLP: commerce engineering depth, independent products and technology that stays accountable."}],["$","link","2",{"rel":"manifest","href":"/manifest.webmanifest"}],["$","meta","3",{"name":"robots","content":"noindex, follow"}],["$","link","4",{"rel":"canonical","href":"https://www.9colon.com/vision.html"}],["$","meta","5",{"property":"og:title","content":"9Colon | Technology products and engineering"}],["$","meta","6",{"property":"og:description","content":"Magento and Adobe Commerce engineering, additional commerce platforms, and independent SaaS products."}],["$","meta","7",{"property":"og:url","content":"https://www.9colon.com"}],["$","meta","8",{"property":"og:site_name","content":"9Colon Systems LLP"}],["$","meta","9",{"property":"og:locale","content":"en"}],["$","meta","10",{"property":"og:image","content":"https://www.9colon.com/brand/9colon-og.png"}],["$","meta","11",{"property":"og:image:width","content":"1200"}],["$","meta","12",{"property":"og:image:height","content":"630"}],["$","meta","13",{"property":"og:image:alt","content":"9Colon Systems — Engineering Commerce. Building Products."}],["$","meta","14",{"property":"og:type","content":"website"}],["$","meta","15",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","16",{"name":"twitter:title","content":"9Colon | Technology products and engineering"}],["$","meta","17",{"name":"twitter:description","content":"Magento and Adobe Commerce engineering, additional commerce platforms, and independent SaaS products."}],["$","meta","18",{"name":"twitter:image","content":"https://www.9colon.com/brand/9colon-og.png"}],["$","link","19",{"rel":"icon","href":"/icon.svg?d3a15eb4d460ed68","type":"image/svg+xml","sizes":"any"}],["$","$L13","20",{}]]}]}]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}]
+9:["$","$1","c",{"children":[null,["$","$L14",null,{"parallelRouterKey":"children","template":["$","$L15",null,{}]}]]}]
+d:true
+10:null
+6:300
+6:C
+c:0
+8:"$undefined"
+a:"$undefined"
+5:"$undefined"

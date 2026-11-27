@@ -1,0 +1,215 @@
+1:"$Sreact.fragment"
+2:I[1315,["264","static/chunks/264-8dfa34814482c94b.js","275","static/chunks/275-58eb57ba0a40d487.js","850","static/chunks/850-4d2ae3b282d0463c.js","877","static/chunks/app/privacy/page-f3aca4230edc7349.js"],"EditablePage"]
+3:Tb74,
+    query page($relativePath: String!) {
+  page(relativePath: $relativePath) {
+    ... on Document {
+      _sys {
+        filename
+        basename
+        hasReferences
+        breadcrumbs
+        path
+        relativePath
+        extension
+      }
+      id
+    }
+    ...PageParts
+  }
+}
+    
+    fragment PageParts on Page {
+  __typename
+  title
+  description
+  published
+  hidden
+  blocks {
+    __typename
+    ... on PageBlocksHero {
+      visibility
+      eyebrow
+      title
+      body
+      image
+      imageDark
+      imageAlt
+      imageCaption
+      imageCredit
+      visual
+      titleSize
+      alignment
+      actions {
+        __typename
+        label
+        href
+        style
+      }
+      techStrip
+    }
+    ... on PageBlocksLogos {
+      visibility
+      title
+      items {
+        __typename
+        name
+        image
+      }
+    }
+    ... on PageBlocksFeatures {
+      visibility
+      eyebrow
+      title
+      intro
+      anchor
+      layout
+      aside {
+        __typename
+        title
+        body
+        label
+        href
+        icon
+      }
+      items {
+        __typename
+        title
+        description
+        linkLabel
+        href
+        badge
+        status
+        featured
+        icon
+        image
+        imageAlt
+      }
+    }
+    ... on PageBlocksProductShowcase {
+      visibility
+      eyebrow
+      title
+      description
+      status
+      visual
+      features
+      productImage
+      productImageAlt
+      primaryLabel
+      primaryHref
+      secondaryLabel
+      secondaryHref
+    }
+    ... on PageBlocksContent {
+      visibility
+      eyebrow
+      title
+      richBody
+      image
+      imageDark
+      imageAlt
+      imageCaption
+      imageCredit
+    }
+    ... on PageBlocksProcess {
+      visibility
+      eyebrow
+      title
+      intro
+      steps {
+        __typename
+        title
+        description
+        icon
+      }
+    }
+    ... on PageBlocksLatestPosts {
+      visibility
+      eyebrow
+      title
+      intro
+      linkLabel
+    }
+    ... on PageBlocksCta {
+      visibility
+      eyebrow
+      title
+      body
+      label
+      href
+      secondaryLabel
+      secondaryHref
+    }
+    ... on PageBlocksFaq {
+      visibility
+      eyebrow
+      title
+      intro
+      items {
+        __typename
+        question
+        answer
+      }
+    }
+    ... on PageBlocksServiceCatalog {
+      visibility
+      eyebrow
+      title
+      intro
+      primaryTitle
+      primaryIntro
+      specializedTitle
+      specializedIntro
+      platformTitle
+      platformIntro
+    }
+    ... on PageBlocksArchitecture {
+      visibility
+      eyebrow
+      title
+      intro
+      items {
+        __typename
+        title
+        description
+        icon
+      }
+    }
+    ... on PageBlocksCredentials {
+      visibility
+      eyebrow
+      title
+      intro
+      items {
+        __typename
+        title
+        detail
+        meta
+        icon
+      }
+    }
+  }
+}
+    6:X
+b:X
+b:C
+0:{"buildId":"nYHDaT78TJ6oS7WV1CF91","data":[{"rsc":["$","$1","c",{"children":[["$","$L2",null,{"data":{"page":{"_sys":{"filename":"privacy","basename":"privacy.mdx","hasReferences":false,"breadcrumbs":["privacy"],"path":"content/pages/privacy.mdx","relativePath":"privacy.mdx","extension":".mdx"},"id":"content/pages/privacy.mdx","__typename":"Page","title":"Privacy notice | 9Colon Systems LLP","description":"How 9Colon Systems LLP handles the information you send through this website, including enquiry details and appearance preferences.","published":true,"hidden":null,"blocks":[{"__typename":"PageBlocksHero","visibility":null,"eyebrow":"Legal","title":"Privacy notice.","body":"What this website collects, why it is collected, and how to ask for it to be removed.","image":null,"imageDark":null,"imageAlt":null,"imageCaption":null,"imageCredit":null,"visual":null,"titleSize":"compact","alignment":"left","actions":null,"techStrip":null},{"__typename":"PageBlocksContent","visibility":null,"eyebrow":"Last updated 27 November 2026","title":"How enquiry information is handled.","richBody":{"type":"root","children":[{"type":"h3","children":[{"type":"text","text":"What this website collects"}]},{"type":"p","children":[{"type":"text","text":"This website does not run advertising, analytics or profiling scripts. It collects information in two places only."}]},{"type":"p","children":[{"type":"text","text":"Enquiry form.","bold":true},{"type":"text","text":" When the form is available, it sends the name, work email, company, enquiry area and message you enter. Those fields are used to understand and answer your enquiry."}]},{"type":"p","children":[{"type":"text","text":"Appearance preference.","bold":true},{"type":"text","text":" The light or dark theme you choose is stored in your browser under the key "},{"type":"text","text":"9colon-theme","code":true},{"type":"text","text":". It stays on your device and is not sent to a server."}]},{"type":"h3","children":[{"type":"text","text":"Where enquiry information goes"}]},{"type":"p","children":[{"type":"text","text":"An enquiry is delivered to a 9Colon-controlled lead service and recorded in a restricted spreadsheet that only the team responding to enquiries can open. A notification is emailed to the same team. The information is not sold, rented or shared for marketing."}]},{"type":"h3","children":[{"type":"text","text":"How long it is kept"}]},{"type":"p","children":[{"type":"text","text":"Enquiry information is kept while the conversation is active and for as long as needed to answer it. You can ask for it to be deleted at any time and it will be removed from the spreadsheet and the mailbox."}]},{"type":"h3","children":[{"type":"text","text":"Your choices"}]},{"type":"p","children":[{"type":"text","text":"You can ask what enquiry information is held about you, ask for a correction, or ask for deletion. Use the contact page to make the request from the same email address you used in the enquiry."}]},{"type":"h3","children":[{"type":"text","text":"Third-party links"}]},{"type":"p","children":[{"type":"text","text":"Pages on this site link to external services such as LinkedIn. Those services apply their own privacy terms, which this notice does not cover."}]},{"type":"h3","children":[{"type":"text","text":"Changes"}]},{"type":"p","children":[{"type":"text","text":"This notice is updated when the way the website handles information changes. The date at the top of this page records the last revision."}]}]},"image":null,"imageDark":null,"imageAlt":null,"imageCaption":null,"imageCredit":null},{"__typename":"PageBlocksCta","visibility":null,"eyebrow":null,"title":"Questions about this notice?","body":"Ask about how enquiry information is stored, corrected or removed.","label":"Contact the team","href":"/contact","secondaryLabel":null,"secondaryHref":null}]}},"errors":null,"query":"$3","variables":{"relativePath":"privacy.mdx"}}],null,"$L4"]}],"isPartial":"$@5","staleTime":"$6","varyParams":null},{"rsc":"$L7","isPartial":"$@8","staleTime":"$6","varyParams":null},{"rsc":"$L9","isPartial":"$@a","staleTime":"$6","varyParams":"$b"}],"isUpgradeableISRFallback":false,"a":"$@c","rootVaryParams":null,"needsRuntimeRequest":"$@d"}
+e:I[4761,[],"OutletBoundary"]
+f:"$Sreact.suspense"
+11:I[4761,[],"ViewportBoundary"]
+12:I[4761,[],"MetadataBoundary"]
+13:I[9292,[],"IconMark"]
+14:I[908,[],""]
+15:I[5562,[],""]
+4:["$","$Le",null,{"children":["$","$f",null,{"name":"Next.MetadataOutlet","children":"$@10"}]}]
+7:["$","$1","h",{"children":[null,["$","$L11",null,{"children":[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]}],["$","div",null,{"hidden":true,"children":["$","$L12",null,{"children":["$","$f",null,{"name":"Next.Metadata","children":[["$","title","0",{"children":"Privacy notice | 9Colon Systems LLP | 9Colon"}],["$","meta","1",{"name":"description","content":"How 9Colon Systems LLP handles the information you send through this website, including enquiry details and appearance preferences."}],["$","link","2",{"rel":"manifest","href":"/manifest.webmanifest"}],["$","link","3",{"rel":"canonical","href":"https://www.9colon.com/privacy.html"}],["$","meta","4",{"property":"og:title","content":"9Colon | Technology products and engineering"}],["$","meta","5",{"property":"og:description","content":"Magento and Adobe Commerce engineering, additional commerce platforms, and independent SaaS products."}],["$","meta","6",{"property":"og:url","content":"https://www.9colon.com"}],["$","meta","7",{"property":"og:site_name","content":"9Colon Systems LLP"}],["$","meta","8",{"property":"og:locale","content":"en"}],["$","meta","9",{"property":"og:image","content":"https://www.9colon.com/brand/9colon-og.png"}],["$","meta","10",{"property":"og:image:width","content":"1200"}],["$","meta","11",{"property":"og:image:height","content":"630"}],["$","meta","12",{"property":"og:image:alt","content":"9Colon Systems — Engineering Commerce. Building Products."}],["$","meta","13",{"property":"og:type","content":"website"}],["$","meta","14",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","15",{"name":"twitter:title","content":"9Colon | Technology products and engineering"}],["$","meta","16",{"name":"twitter:description","content":"Magento and Adobe Commerce engineering, additional commerce platforms, and independent SaaS products."}],["$","meta","17",{"name":"twitter:image","content":"https://www.9colon.com/brand/9colon-og.png"}],["$","link","18",{"rel":"icon","href":"/icon.svg?d3a15eb4d460ed68","type":"image/svg+xml","sizes":"any"}],["$","$L13","19",{}]]}]}]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}]
+9:["$","$1","c",{"children":[null,["$","$L14",null,{"parallelRouterKey":"children","template":["$","$L15",null,{}]}]]}]
+d:true
+10:null
+6:300
+6:C
+c:0
+8:"$undefined"
+a:"$undefined"
+5:"$undefined"
