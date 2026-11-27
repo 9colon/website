@@ -1,0 +1,42 @@
+(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[571],{1108:(e,t,a)=>{"use strict";a.d(t,{Z:()=>n});var r=a(9734);function n({children:e,className:t="",...a}){return(0,r.jsx)("article",{className:`rounded-[1.35rem] border border-border bg-surface p-7 shadow-[0_10px_35px_rgba(37,34,80,.045)] transition duration-300 hover:-translate-y-1 hover:border-primary/30 hover:shadow-[0_18px_45px_rgba(37,34,80,.09)] ${t}`,...a,children:e})}},1958:(e,t,a)=>{Promise.resolve().then(a.bind(a,6376))},2676:(e,t,a)=>{"use strict";a.d(t,{HH:()=>o,iX:()=>d});let r=new Set(["__typename","_sys","_internalSys","_values","_internalValues","_content_source","_tina_metadata"]),n=(e,t,a=[])=>{var i;let s;if(null===t||"string"==(s=typeof(i=t))||"number"===s||"boolean"===s||"undefined"===s||null==i||i instanceof String||i instanceof Number||i instanceof Boolean)return t;if(t instanceof String)return t.valueOf();if(Array.isArray(t))return t.map((t,r)=>n(e,t,[...a,r]));let o={};for(let[i,s]of Object.entries(t))r.has(i)?o[i]=s:o[i]=n(e,s,[...a,i]);return o&&"type"in o&&"root"===o.type?o:{...o,_content_source:{queryId:e,path:a}}},i=`
+  [data-tina-field] {
+    outline: 2px dashed rgba(34,150,254,0.5);
+    transition: box-shadow ease-out 150ms;
+  }
+  [data-tina-field]:hover {
+    outline: 2px solid rgba(34,150,254,1);
+    cursor: pointer;
+  }
+  [data-tina-field-overlay] {
+    outline: 2px dashed rgba(34,150,254,0.5);
+    position: relative;
+  }
+  [data-tina-field-overlay]:hover {
+    outline: 2px solid rgba(34,150,254,1);
+    cursor: pointer;
+  }
+  [data-tina-field-overlay]::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: 20;
+    transition: opacity ease-out 150ms;
+    background-color: rgba(34,150,254,0.3);
+    opacity: 0;
+  }
+  /*
+   * Only the blue fill/wash is gated to hover-capable pointers. On touch
+   * screens (hover: none) :hover latches after a tap and never clears; a
+   * stuck solid outline is acceptable tap feedback, but the full-bleed wash
+   * flooding the tapped element is not. The solid outline above still applies
+   * on touch; only the box-shadow wash and the overlay reveal are held back.
+   */
+  @media (hover: hover) {
+    [data-tina-field]:hover {
+      box-shadow: inset 100vi 100vh rgba(34,150,254,0.3);
+    }
+    [data-tina-field-overlay]:hover::after {
+      opacity: 1;
+    }
+  }
+`;var s=a(8342);let o=(e,t,a)=>{let r=null==e?void 0:e._content_source;if(!r)return"";let{queryId:n,path:i}=r;if(!t)return`${n}---${i.join(".")}`;let s="number"==typeof a?[...i,t,a]:[...i,t];return`${n}---${s.join(".")}`},l=s.createContext(null);function d(e){let t,a=JSON.stringify({query:e.query,variables:e.variables}),r=s.useMemo(()=>(e=>{let t=0;for(let a=0;a<e.length;a++)t=(t<<5)-t+e.charCodeAt(a)|0;return Math.abs(t).toString(36)})(a),[a]),o=s.useMemo(()=>{if(e.data)return n(r,JSON.parse(JSON.stringify(e.data)),[])},[e.data,r]),d=(t=s.useContext(l),s.useMemo(()=>null==t?"u">typeof window?[window.location.origin]:[]:Array.isArray(t)?[...t]:[t],[t])),[c,u]=s.useState(o),[p,f]=s.useState(!1),[m,h]=s.useState(!1),[g,b]=s.useState(!1);return s.useEffect(()=>{f(!0),u(o),parent.postMessage({type:"url-changed"})},[r,o]),s.useEffect(()=>{if(m){let e=function(e){let t,a=e.target.getAttributeNames().find(e=>e.startsWith("data-tina-field"));if(a)e.preventDefault(),e.stopPropagation(),t=e.target.getAttribute(a);else{let a=e.target.closest("[data-tina-field], [data-tina-field-overlay]");if(a){let r=a.getAttributeNames().find(e=>e.startsWith("data-tina-field"));r&&(e.preventDefault(),e.stopPropagation(),t=a.getAttribute(r))}}t&&g&&parent.postMessage({type:"field:selected",fieldName:t},window.location.origin)},t=document.createElement("style");return t.type="text/css",t.textContent=i,document.head.appendChild(t),document.body.classList.add("__tina-quick-editing-enabled"),document.addEventListener("click",e,!0),()=>{document.removeEventListener("click",e,!0),document.body.classList.remove("__tina-quick-editing-enabled"),t.remove()}}},[m,g]),s.useEffect(()=>{(null==e?void 0:e.experimental___selectFormByFormId)&&parent.postMessage({type:"user-select-form",formId:e.experimental___selectFormByFormId()})},[r]),s.useEffect(()=>{let{experimental___selectFormByFormId:t,...a}=e;parent.postMessage({type:"open",...a,id:r},window.location.origin);let i=e=>{!("u"<typeof window)&&d.includes(e.origin)&&e.source===window.parent&&("quickEditEnabled"===e.data.type&&h(e.data.value),e.data.id===r&&"updateData"===e.data.type&&(u(n(r,JSON.parse(JSON.stringify(e.data.data)),[])),b(!0),document.querySelector("[data-tina-field]")?parent.postMessage({type:"quick-edit",value:!0},window.location.origin):parent.postMessage({type:"quick-edit",value:!1},window.location.origin)))};return window.addEventListener("message",i),()=>{window.removeEventListener("message",i),parent.postMessage({type:"close",id:r},window.location.origin)}},[r,h,d]),{data:c,isClient:p}}},2936:(e,t,a)=>{"use strict";a.d(t,{Gp:()=>i,ib:()=>s});var r=a(9734);let n={beta:"border-[#b7e4c7] bg-[#e8f7ee] text-[#1c6b3f]","coming soon":"border-border bg-surface-subtle text-muted"};function i({status:e,className:t="",tone:a="default"}){if(!e)return null;let s="inverse"===a?"beta"===e.toLowerCase()?"border-white/25 bg-white/10 text-[#b9f0cd]":"border-white/20 bg-white/10 text-white/70":n[e.toLowerCase()]??n["coming soon"];return(0,r.jsx)("span",{className:`inline-flex shrink-0 items-center whitespace-nowrap rounded-[5px] border px-[6px] py-[2px] text-[0.6875rem] font-medium leading-[1.25] ${s} ${t}`,children:e})}function s({status:e}){return e?(0,r.jsx)("span",{className:"text-[0.6875rem] font-medium text-muted",children:e}):null}},6076:(e,t,a)=>{"use strict";a.d(t,{s:()=>n});var r=a(7995);function n(e){if(/^(?:[a-z][a-z\d+.-]*:|\/\/)/iu.test(e))return e;let t=e.startsWith("/")?e:`/${e}`;return r.MH&&(t===r.MH||t.startsWith(`${r.MH}/`))?t:r.MH?`${r.MH}${t}`:t}},6376:(e,t,a)=>{"use strict";a.d(t,{ProductCatalog:()=>c});var r=a(9734),n=a(2936),i=a(8342),s=a(6076),o=a(2676),l=a(1108),d=a(7995);function c(e){let{data:t}=(0,o.iX)(e),a=(0,i.useMemo)(()=>(t.productConnection.edges?.flatMap(e=>e?.node?[e.node]:[])??[]).sort((e,t)=>(e.displayOrder??100)-(t.displayOrder??100)),[t]);return(0,r.jsx)(r.Fragment,{children:(0,r.jsx)("div",{className:"grid gap-4 md:grid-cols-2",children:a.map(e=>(0,r.jsxs)(l.Z,{className:"group flex min-h-96 flex-col overflow-hidden p-0",children:[e.primaryImage?(0,r.jsx)("img",{className:"aspect-[16/8] w-full object-cover",src:(0,s.s)(e.primaryImage),alt:"",width:1200,height:600}):(0,r.jsx)("div",{className:"h-3 bg-[linear-gradient(90deg,var(--color-primary)_0_58%,var(--color-accent)_58%)]"}),(0,r.jsxs)("div",{className:"flex flex-1 flex-col p-7",children:[(0,r.jsxs)("div",{className:"flex items-center justify-between gap-4",children:[(0,r.jsx)("span",{className:"text-xs font-bold uppercase tracking-[0.16em] text-primary",children:e.category}),(0,r.jsx)(n.Gp,{status:e.status})]}),(0,r.jsx)("h2",{className:"mt-7 text-3xl font-semibold tracking-[-0.04em]",children:e.name}),(0,r.jsx)("p",{className:"mt-4 flex-1 leading-7 text-muted",children:e.description}),(0,r.jsx)("a",{className:"mt-8 w-fit border-b border-primary/30 pb-1 text-sm font-bold text-primary",href:(0,d.ZA)(`/products/${e._sys.filename}`),children:"View product →"})]})]},e.id))})})}},7995:(e,t,a)=>{"use strict";a.d(t,{MH:()=>o,ZA:()=>d,dA:()=>l,rf:()=>c});let r={name:"9Colon Systems LLP",shortName:"9Colon",description:"Magento and Adobe Commerce engineering, additional commerce platforms, and independent SaaS products.",url:"https://www.9colon.com".replace(/\/$/u,"")},n=/^(?:[a-z][a-z\d+.-]*:|\/\/)/iu,i=/\.[a-z\d]+$/iu,s="".replace(/^\/+|\/+$/gu,""),o=s?`/${s}`:"";function l(e){let t=o&&(e===o||e.startsWith(`${o}/`))?e.slice(o.length)||"/":e,a=t.endsWith(".html")?t.slice(0,-5):t;return"/"===a?a:a.replace(/\/+$/u,"")}function d(e){if(!e||e.startsWith("#")||n.test(e))return e;let t=function(e){if(!e||e.startsWith("#")||n.test(e))return e;let t=e.search(/[?#]/u),a=-1===t?e:e.slice(0,t),r=-1===t?"":e.slice(t),s="/"===a?a:a.replace(/\/+$/u,"");return"/"===s||s.startsWith("/admin")||i.test(s)?`${s}${r}`:`${s}.html${r}`}(o&&(e===o||e.startsWith(`${o}/`))?e.slice(o.length)||"/":e);return o?`${o}${t}`:t}function c(e="/"){return new URL(e.replace(/^\//u,""),`${r.url}/`).toString()}}},e=>{e.O(0,[984,914,358],()=>e(e.s=1958)),_N_E=e.O()}]);
